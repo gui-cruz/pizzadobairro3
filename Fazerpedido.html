@@ -1,0 +1,299 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Faça seu pedido</title>
+     
+        <style>
+
+        html{
+            font-family: Arial;
+            font-size: 62.5%;
+            color: white;
+        }
+
+        header{
+            background: linear-gradient(to top, #222222, black);
+            color: #8a2be2;
+            text-align: center;
+            align-items: center;
+            position: auto; /* Mudar para Fixed */
+            padding-bottom: 15px;
+            padding-top: 15px;
+            border-radius: 20px;
+        }
+
+        body{
+            background-color: rgb(34, 34, 34);
+            padding: 0;
+        }
+
+        main{
+            width: 60%;
+            margin: 0 auto;
+
+        }
+
+        footer{
+            background: linear-gradient(to bottom, #222222, black);
+            border-radius: 20px;
+            color: #8a2be2;
+            text-align: center;
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }   
+
+        h1{
+            font-size: 4.5rem;
+            line-height: 20px;
+            color: #8a2be2;
+        }
+
+        h2{
+            font-size: 3.0rem;
+        }
+    
+        h3{
+            font-size: 2.0rem;
+        }
+    
+        h4{
+            font-size: 1.5rem;
+        }
+    
+        h5{
+            font-size: 3rem;
+            text-shadow: 1px 1px 1px;
+            text-align: center;
+        }
+
+        #inscreva-se-btn{
+            border: 1px solid #8a2be2;
+            border-radius: 8px;
+            background-color: #222222;
+            color: white;
+            height: 80px;
+            width: 450px;
+        }
+
+        #inscreva-se-btn:hover{
+            border: 1.75px solid #8a2be2;
+            border-radius: 8px;
+            background-color: black;
+            color: white;
+            height: 80px;
+            width: 450px;
+            box-shadow: 2px 1px 1px  #8a2be2;
+
+        }
+
+        .div-btn{
+            text-align: center;
+        }
+
+        label, input{
+            display: inline-block;
+            margin: 0px 40px;
+            margin-bottom: 10px;
+        }
+
+        .v1{
+            margin: 0 auto;
+            text-align: center;
+        }
+        .v1 input{
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #000000;
+            border-radius: 20px;
+            box-shadow: 0px 3px 0.3px #000000;
+           
+        }
+
+        .v1 label{
+            
+            margin: 10 auto;
+          
+            font-weight: bold;
+            
+        }
+
+ 
+        section{
+            margin: 0px;
+            border-radius: 8px;
+            border: solid 1px white;
+            border-radius: 20px;
+            box-shadow: 20px 10px 12px #000000;
+            
+        }
+        
+        form{font-size: 2rem;}
+
+        .pedido-sub-titulos{
+            text-align: center;
+        }
+
+        hr{
+            margin-top: 20px;
+            width: 45%;
+        }
+        .mini-hr{
+            margin-bottom: 20px;
+            margin-top: 20px;
+            width: 12%;
+            border-style: dashed;
+        }
+        .hr-mini{
+            margin-bottom: 20px;
+            margin-top: 20px;
+            width: 25%;
+            border-style: inherit;
+        }
+        .hr-header{
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+        
+        .opcoes-tamanho-titulo{
+            text-align: center;
+            margin: 10px;
+        }
+
+        .opcoes-tamanho{
+            display: flex;
+            margin: 0 auto;
+            flex-direction: row;
+        }
+
+        .opcoes-de-tamanho label{
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .opcoes-de-tamanho input{
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 0;
+            
+        }
+
+        .textarea{
+            border-radius: 20px;
+            margin: 0 auto;
+        }
+        .opcoes-de-tamanho {
+            margin: 0;
+            padding: 0;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .v2{
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        textarea{
+            border-radius: 20px;
+        }
+        </style>
+    </head>
+        <main id="main-pedido">
+            <section class="teste">
+                <body>
+
+                    <header>
+                        <div id="title">
+                            <h1>Pizzaria do Bairro</h1>
+                        </div>
+                    </header>
+                    <hr class="hr-header">
+
+                    
+            <div class="pedido-sub-titulos">
+            <h2>Faça seu pedido!</h1>
+            <h3>Preencha os campos</h3>
+
+                <hr class="mini-hr">
+            </div>
+            <form>
+
+                <div class="v1">
+                <div><label for="nome">Nome: </label></div>
+                <div><input type="text" name="nome" id="nome"></div>
+                <div><label for="email">E-mail</label></div>
+                <div><input type="email" name="email" id="email"></div>
+                <div><label for="endereço">Endereço: </label></div>
+                <div><input type="text" name="endereço" id="endereço"></div>
+                <div><label for="tel">Telefone:</label></div>
+                <div><input type="tel" name="tel" id="tel"></div>
+                <div><label for="tamanho">Tamanho:</label></div>
+                </div>
+                
+                <!-- Opções de tamanhos-->
+                
+                <div class="opcoes-de-tamanho" style="margin: 0">
+                <label for="broto">Broto</label>
+                
+                <input type="radio" id="broto" name="tamanho" value="broto" required>
+                
+                <label for="pequena">Pequena</label>
+                <input type="radio" id="pequena" name="tamanho" value="pequena" required>
+                
+                <label for="media">Média</label>
+                
+                <input type="radio" id="media" name="tamanho" value="media">
+                <label for="grande">Grande</label>
+                
+                <input type="radio" id="grande" name="tamanho" value="grande">
+                <hr>
+                </div>
+                <div class="v1"><div><label for="tamanho" style="margin-top: 10px;">Forma de Pagamento:</label></div>
+                </div>
+                
+                <div class="opcoes-de-tamanho" style="margin: 0;">
+                    <label for="pix">Pix</label>
+                    <input type="radio" id="pix" name="pix" value="pix" required>
+                    <label for="cartao">Cartão</label>
+                    <input type="radio" id="Cartão" name="Cartão" value="Cartão" required>
+                    <label for="dinherio">Dinheiro</label>
+                    <input type="radio" id="Dinheiro" name="Dinheiro" value="Dinheiro">
+                    </div>
+                    
+                    
+                
+                <!-- Adicione sua observação-->
+                
+                <div class="v1">
+                    <div><label for="tamanho" style="margin-top: 10px;">Observações:</label></div>
+                </div>   
+                
+                <div class="v2">
+                    <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
+                </div>
+
+                <!-- Botão de Confirmar-->
+                <hr>
+            <div class="div-btn">
+                <button id="inscreva-se-btn"><h2><a href="confirmar-pedido.html" style="text-decoration: none;">SOLICITAR PEDIDO</a></h2></button>
+            </div>
+            
+            <hr>
+
+  
+            <footer>
+                <h3><strong>A MELHOR PIZZARIA DA SUA CIDADE</strong></h3>
+                <h4>© Grupo Pizza do Bairro, 2023. Todos os direitos reservados.</h4>
+            </footer>
+            </section>
+            </main>
+
+    </body>
+    </html>

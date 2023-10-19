@@ -1,0 +1,360 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Promoções</title>
+    </head>
+
+    <style>
+        
+        html{
+            font-family: Arial;
+            font-size: 62.5%;
+        }
+ 
+        header{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to top, #222222, black);
+            padding-bottom: 30px;
+            border-radius: 35px;
+        }
+
+        body{
+            background-color: rgb(34, 34, 34);
+            color: white;
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 0rem;
+            font-size: 2rem;
+            border: solid 1px white;
+            text-align: center;
+            border-radius: 35px;
+            box-shadow: 20px 10px 12px #000000;
+            
+        }
+
+        #title{
+            flex-direction: column;
+            line-height: 10px;
+        }
+
+        li{
+            display: inline-block;
+            margin: 20px;
+            color:white;
+        }
+
+        li:hover{
+            padding: 3px;
+            background-color: black;
+            color: white;
+            box-shadow: 6px 1px 1px 20% #8a2be2;
+        }
+
+        a{
+            color: white;
+        }
+
+
+
+        footer{
+            background: linear-gradient(to bottom, #222222, black);
+            color: #8a2be2;
+            font-size: 1.8rem;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 35px;
+        }
+
+        .imagens-site{
+            border-radius: 10px 10px 10px 10px;
+            width: 100%;
+            height: 100%;
+            box-shadow: 1.5px 1px 1px black;
+            border: solid 4px black;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+            grid-gap: 5px;
+            max-width: 1200px;
+            margin: 0 auto; /* Sempre Alinha no Centro */
+        }
+
+        .grid div{
+            background-color: 222222ff;
+            text-align: center;
+            padding:2rem;
+        }
+
+        .grid2{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+            grid-gap: 5px;
+            max-width: 1200px;
+            margin: 0 auto; /* Sempre Alinha no Centro */
+        }
+
+        .grid2 div{
+            background-color: #222222;
+            text-align: center;
+            padding:2rem;
+        }
+
+        #compras{
+            background-color: black;
+            color: white;
+            width: 275px;
+            height: 150px;
+            right: 0;
+            position: fixed;
+            text-align: center;
+            margin-top: 3rem;
+            margin-right: 8.5rem;
+            z-index: 1;
+            border-radius: 12px;
+            border: solid 1px #8a2be2;
+            box-shadow: 1.5px 1px 1px #8a2be2;
+        }
+
+        #compras button{
+            background-color: #222222;
+            border: solid 1px #8a2be2;
+            border-radius: 12px;
+            width: 225px;
+            font-size: 2.25rem;
+            font-weight: bold;
+            height: 80px;
+            
+        }
+
+        #compras button:hover{
+            border: 1.75px solid #8a2be2;
+            border-radius: 12px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-shadow: 1.5px 1px 1px #8a2be2;
+            
+        }
+
+        h1{
+            font-size: 4.5rem;
+            line-height: 20px;
+            color: #8a2be2;
+            
+        }
+
+        h2{
+            font-size: 2.0rem;
+        }
+    
+        h3{
+            font-size: 1.7rem;
+        }
+    
+        h4{
+            font-size: 1.5rem;
+        }
+    
+        h5{
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        #inscreva-se-btn2{
+            border: 2px solid #8a2be2;
+            padding: 10px;
+            background-color: #222222;
+            border-radius: 12px;
+
+        }
+
+        #inscreva-se-btn2:hover{
+            border: 1.75px solid #8a2be2;
+            border-radius: 12px;
+            background-color: black;
+            color: white;
+            box-shadow: 1.5px 1px 1px  #8a2be2;
+        }
+    
+        hr{
+            margin-top: 20px;
+            width: 45%;
+            border: solid 0.1px white;
+        }
+
+    </style>
+
+    <body >
+        <header>
+            <ul>
+                <a href="index.html"><li>Início</li></a>
+                <a href="Fazerpedido.html"><li>Realizar Pedido</li></a>
+                <a href="Fazerpedido.html" id="inscreva-se-btn2"><li>Já tem uma conta?</li></a>
+            </ul>
+        </div>
+            <div id="title">
+                <h1>Pizzaria do Bairro</h1>
+            </div>
+            <div>
+ 
+        </header>
+
+    <div id="compras">
+        <h2>Faça seu pedido Aqui:</h2>
+        <button id="btn-compras" style="font-size: 2rem;"><a href="Fazerpedido.html">COMPRAR AGORA</a></button>
+    </div>
+    <hr>
+<section class="conteudo-topo">
+    <h5>Monte agora sua pizza!</h5>
+    <h5>Sabores Tradicionais em Promoção</h5>
+    <h5>Pizza de Segunda a Quinta!</h5>
+    <h5>Por Apenas R$31,99!</h5>
+</section>
+
+<a href="#" id="Pizzas"></a>
+<section class="conteudo" id="grid-conteudo">
+
+    <div class="grid">
+
+        <div>
+            <figure>
+                <img src="img/calabresa.jpg" alt="Pizza de Calabresa" class="imagens-site">
+                <figcaption>Pizza de Calabresa</figcaption>
+            </figure>
+        </div>
+
+        <div>
+            <figure>
+                <img class="imagens-site" src="img/frango.jpg" alt="Pizza de Frango">
+                <figcaption>Pizza de Frango</figcaption>
+            </figure>
+        </div>
+
+        <div>
+            <figure>
+                <img class="imagens-site" src="img/marguerita.jpg" alt="Pizza de Marguerita">
+                <figcaption>Pizza de Marguerita</figcaption>
+            </figure>
+        </div>
+
+        <div>          
+            <figure>
+                <img class="imagens-site" src="img/mussarela.jpg" alt="Pizza de Mussarela">
+                <figcaption>Pizza de Mussarela</figcaption>
+            </figure>
+        </div>
+
+        <div> 
+            <figure>
+                <img class="imagens-site" src="img/palmito.jpg" alt="Pizza de Palmito">
+                <figcaption>Pizza de Palmito</figcaption>
+            </figure>
+        </div>
+
+        <div>          
+            <figure>
+                <img class="imagens-site" src="img/strogonoff.jpg" alt="Pizza de Strogonoff" style="margin-top: 17px;">
+                <figcaption>Pizza de Strogonoff</figcaption>
+            </figure>
+        </div>
+
+        <div>          
+            <figure>
+                <img class="imagens-site" src="img/4queijo.jpg" alt="Pizza de Queijo" style="margin-top: 17px;">
+                <figcaption>Pizza de Queijo</figcaption>
+            </figure>
+        </div>
+
+
+        <div>          
+            <figure>
+                <img class="imagens-site" src="img/portuguesa.jpg" alt="Pizza de Portuguesa">
+                <figcaption>Pizza de Portuguesa</figcaption>
+            </figure>
+        </div>
+
+        <div>          
+            <figure>
+                <img class="imagens-site" src="img/mexicana.jpg" alt="Pizza Mexicana">
+                <figcaption>Pizza Mexicana</figcaption>
+            </figure>
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<div>
+    <h2>Sabores Exclusivos da Casa!</h5>
+    <h2>A partir de R$34,99!</h5>
+</div>
+
+
+<section class="conteudo2">
+
+    <div class="grid2">
+
+        <div>
+            <figure>
+                <img src="img/dacasa.jpg" alt="Pizza da Casa" class="imagens-site">
+                <figcaption>Pizza da Casa</figcaption>
+            </figure>
+        </div>
+
+        <div>
+            <figure>
+                <img class="imagens-site" src="img/pizzavegana.jpg" alt="Pizza Vegana">
+                <figcaption>Pizza Vegana</figcaption>
+            </figure>
+        </div>
+
+        <div>
+            <figure>
+                <img class="imagens-site" src="img/pesadelo.jpg" alt="Pizza Pesadelo">
+                <figcaption>Pizza Pesadelo</figcaption>
+            </figure>
+        </div>
+
+        <div>          
+            <figure>
+                <img class="imagens-site" src="img/arabe.jpg" alt="Pizza Árabe">
+                <figcaption>Pizza Árabe</figcaption>
+            </figure>
+        </div>
+
+        <div> 
+            <figure>
+                <img class="imagens-site" src="img/carnaval.jpg" alt="Pizza Carnaval">
+                <figcaption>Pizza Carnaval</figcaption>
+            </figure>
+        </div>
+
+        <div>          
+            <figure>
+                <img class="imagens-site" src="img/petolas.png" alt="Pizza de Pétolas">
+                <figcaption>Pizza de Pétolas</figcaption>
+            </figure>
+        </div>
+
+    </div>
+
+</section>
+<hr>
+<footer>
+    <h3><strong>A MELHOR PIZZARIA DA SUA CIDADE</strong></h3>
+    <h4>© Grupo Pizzaria do Bairro, 2023. Todos os direitos reservados.</h4>
+    <h4>Contato: (41) 99999-9999</h5>
+</footer>
+
+ </body>
+ </html>

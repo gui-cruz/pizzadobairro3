@@ -1,0 +1,215 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Confirmação do Pedido</title>
+     
+        <style>
+
+        html{
+            font-family: Arial;
+            font-size: 62.5%;
+            color: white;
+        }
+
+        header{
+            background: linear-gradient(to top, #222222, black);
+            color: #8a2be2;
+            text-align: center;
+            align-items: center;
+            position: auto; /* Mudar para Fixed */
+            padding-bottom: 15px;
+            padding-top: 15px;
+            border-radius: 20px;
+        }
+
+        body{
+            background-color: rgb(34, 34, 34);
+            padding: 0;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        footer{
+            background: linear-gradient(to bottom, #222222, black);
+            border-radius: 20px;
+            color: #8a2be2;
+            text-align: center;
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }   
+
+        h1{
+            font-size: 4.5rem;
+            line-height: 20px;
+            color: #8a2be2;
+        }
+
+        h2{
+            font-size: 3.0rem;
+        }
+    
+        h3{
+            font-size: 2.0rem;
+        }
+
+        .azul, .laranja{
+            background-color: #222222;
+            border: solid 1px #8a2be2;
+            border-radius: 5px;
+        }
+
+
+
+        .botoes{
+            text-align: center;
+            margin-top: 10px;
+            
+            background-color: #222222;
+        }
+
+        .botoes button{
+            padding: 10px 20px;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border: solid 1px #8a2be2;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .botoes button:hover{
+            border: 1.75px solid #8a2be2;
+            border-radius: 8px;
+            background-color: black;
+            color: white;
+            box-shadow: 1px 1px 1px #8a2be2;
+        }
+
+        section{
+            margin: 0px;
+            border-radius: 8px;
+            border: solid 1px white;
+            border-radius: 20px;
+            box-shadow: 20px 10px 12px #000000;
+        }
+    
+        hr{
+            margin-top: 20px;
+            width: 45%;
+        }
+
+        .hr-header{
+            width: 15%;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+
+        table{
+            width: 70%;
+            margin: 0px 15%;
+        }    
+    
+        td,th{
+            border: 1px solid white;
+            text-align: center;
+        
+        }
+
+        div{
+            text-align: center     ;
+        }
+     
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .sub-titulos{
+            text-align: center;
+        }
+
+        p{
+            font-size: 1.5rem;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+        }
+
+        img{
+            margin-top: 5px;
+        }
+
+        hr{
+            width: 15%;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        </style>
+    </head>
+        <body>
+            <section class="teste">
+
+                    <header>
+                        <div id="title">
+                            <h1>Pizzaria do Bairro</h1>
+                        </div>
+                    </header>
+                    <main id="main-pedido">
+
+                        <div class="sub-titulos">
+                        <hr class="hr-header">
+                        <h2>Pedido Confirmado!</h1>
+                        <h3>Resumo do Pedido</h4>
+                        </div>
+
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th colspan="2"><h4>Pedido</h4></th>
+                                    <th>Valor</td>
+                                    <th>Método de Pagamento</th>
+                                </tr>
+                                <tr>
+                                    <td><b>Produto</b></td>
+                                    <td>Pizza de Frango</td>
+                                    <td>R$69,99</td>
+                                    <td rowspan="2">
+                                        <img src="img/pix.png" width="25%">
+                                        <hr>
+                                        <p style="margin: 0; margin-bottom: 5px;">Pix</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Frete</b></td>
+                                    <td>Rua Brigadeiro Franco 2045</td>
+                                    <td>R$10,00</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><h4>Total</h4></td>
+                                    <td>R$79,99</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                            <p>Agora é só esperar sua pizza!</p>
+                        </div>
+                        <div class="botoes">
+                            <button type="submit" class="laranja"><a href="index.html">Voltar</a></button>
+                        </div>
+        </main>
+            <hr>
+            <footer>
+                <h3><strong>A MELHOR PIZZARIA DA SUA CIDADE</strong></h3>
+                <h4>© Grupo Pizza do Bairro, 2023. Todos os direitos reservados.</h4>
+            </footer>
+            </section>
+
+    </body>
+    </html>
